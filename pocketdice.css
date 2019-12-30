@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Modesto";
+  src: url('https://github.com/garyn90/ModestoFontFamily/blob/master/Modesto%20Condensed%20Bold.ttf')
+}
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Modesto", "Condensed Bold";
+  background-color: black;
+  overflow-x: hidden;
+}
+.container {
+  resize: both;
+  background-color: white;
+  position: absolute;
+  width: 2000px;
+  height: 100px;
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+#logo {
+  position: absolute;
+  top: 10%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  height: 90px;
+  width: 205px;
+  max-height: 90px;
+}
+
+#logo:hover {
+  border-bottom: 2px red;
+}
+
+#desc {
+  position: absolute;
+  padding: 10px 10px 10px 10px;
+  left: 8%;
+  top: 53px;
+  margin: 0px 0px 0px 0px;
+  float: right;
+  font-family: 'Open Sans', sans-serif;
+  color: solid red;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  letter-spacing: .08em;
+}
+
+#tweety {
+  top: 38px;
+  position: absolute;
+  right: 125px;
+  height: 40px;
+  width: 40px;
+}
+
+
+/* Everything below is the sheet*/
+
+#pick {
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  padding: 25px;
+  margin: 5px 5px 5px 5px;
+  display: inline-block;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#the-sheet {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  top: 200px;
+  left: 250px;
+  height: 400px;
+  width: 1000px;
+  background-color: #FFFAFA; 
+  font-family: 'Modesto', Condensed;
+  border: 3px solid red;
+}
+
+#dice-cont {
+  height: 300px;
+  display: flex;
+  margin: 10px 0px 10px 0px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#d4img, #d6img, #d8img, #d10img, #d12img, #d20img {
+  width: 125px;
+  height: 125px;
+  margin: 5px 5px 5px 5px;
+  border: 1px solid red;
+}
+
+#d4img#d6img#d8img#d10img#d12img#d20img:hover {
+  filter:
+    invert(100); 
+}
+
+#second-sheet {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  top: 450px;
+  height: 400px;
+  width: 1000px;
+  background-color: #FFFAFA; 
+  font-family: 'Modesto', Condensed;
+  border: 3px solid red;
+}
