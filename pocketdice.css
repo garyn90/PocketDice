@@ -1,14 +1,12 @@
-/*@font-face {
-  font-family: "Modesto";
-  src: url('https://github.com/garyn90/ModestoFontFamily/blob/master/Modesto%20Condensed%20Bold.ttf')
-}*/
-
+@import url('https://fonts.googleapis.com/css?family=Rubik:700,900&display=swap');
 
 body {
   padding: 0;
   margin: 0;
   height: 100%;
   width: 100%;
+  max-height: 100%;
+  max-width: 100%;
   font-family: 'Open Sans', sans-serif;
   background-color: black;
   overflow-x: hidden;
@@ -19,29 +17,28 @@ body {
   position: absolute;
   width: 2000px;
   height: 100px;
+  max-height: 100px;
+  max-width: 2000px;
   color: red;
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid red;
 }
 
 #logo {
   position: absolute;
-  top: 10%;
+  top: 3%;
   margin: 0px 0px 0px 0px;
   padding: 0px;
-  height: 90px;
-  width: 205px;
-  max-height: 90px;
-}
-
-#logo:hover {
-  border-bottom: 2px red;
+  height: 100px;
+  width: 225px;
+  max-width: 225px;
+  max-height: 100px;
 }
 
 #desc {
   position: absolute;
   padding: 10px 10px 10px 10px;
-  left: 8%;
-  top: 53px;
+  left: 9.5%;
+  top: 58px;
   margin: 0px 0px 0px 0px;
   float: right;
   font-family: 'Open Sans', sans-serif;
@@ -52,12 +49,23 @@ body {
   letter-spacing: .08em;
 }
 
-#tweety {
-  top: 45px;
+#beta {
   position: absolute;
-  right: 125px;
-  max-height: 40px;
-  max-width: 40px;
+  font-weight: bold;
+  float: right;
+  top: 67px;
+  right: 175px;
+  left: 1025px;
+}
+
+#tweety {
+  top: 40px;
+  position: absolute;
+  right: 120px;
+  max-height: 50px;
+  max-width: 50px;
+  margin: 0px 0px 0px 0px;
+  padding: 5px 5px 5px 5px;
   white-space: nowrap;
 }
 
@@ -67,13 +75,14 @@ body {
 #pick {
   position: absolute;
   text-align: center;
-  top: 10px;
+  top: 5px;
   padding: 20px;
   margin: 5px 5px 5px 5px;
   display: inline-block;
   position: absolute;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 20px;
+  color: rgb(255, 0, 0);  
 }
 
 #the-sheet {
@@ -87,8 +96,9 @@ body {
   height: 400px;
   width: 1000px;
   background-color: #FFFAFA; 
-  font-family: 'Modesto', Condensed;
-  border: 3px solid red;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid red;
+  
 }
 
 #dice-cont {
@@ -104,12 +114,39 @@ body {
   width: 125px;
   height: 125px;
   margin: 5px 5px 5px 5px;
-  border: 1px solid red;
+  transition: 0.5s;
 }
 
-#d4img#d6img#d8img#d10img#d12img#d20img:hover {
-  filter:
-    invert(100); 
+
+
+#d4:hover, #d6:hover, #d8:hover, #d10:hover, #d12:hover, #d20:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.counters {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  
+
+
+  height: 30px;
+  width: 30px;
+  top: 275px;
+  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+}
+.clicked {
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    height: 30px;
+    width: 30px;
+    top: 275px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
 }
 
 
@@ -119,13 +156,15 @@ body {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
+  left: 250px; 
+  right: 250px;
   border-radius: 25px;
-  top: 450px;
-  height: 600px;
+  top: 650px;
+  height: 500px;
   width: 1000px;
   background-color: #FFFAFA; 
   font-family: 'Open Sans', sans-serif;
-  border: 3px solid red;
+  border: 1px solid red;
 }
 
 #ss_desc {
@@ -136,13 +175,16 @@ body {
   margin: 5px 5px 5px 5px;
   display: inline-block;
   position: absolute;
-  font-family: 'Open Sans', sans-serif;
+
+  font-family: 'Rubik', sans-serif;
   font-size: 20px;
+  color: rgb(255, 0, 0);
 }
 
 .ss_text {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 20px;
+  color: rgb(255, 0, 0);
 }
 
 div#proficiency {
@@ -187,14 +229,14 @@ div#other {
   position: absolute;
   margin: 5px 5px 5px 5px;
   padding: 5px 5px 5px 5px;
-  top: 200px;
-  left: 5px;
+  top: 125px;
+  left: -10px;
   resize: none;
-
+  margin: auto;
 }
 
 .selects{ 
-  width: 80px;
+  width: 100px;
   margin: 3px 3px 3px 3px;
   overflow: visible;
 }
