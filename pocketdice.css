@@ -16,7 +16,7 @@ body {
   background-color: white;
   position: absolute;
   width: 2000px;
-  height: 100px;
+  height: -80px;
   max-height: 100px;
   max-width: 2000px;
   color: red;
@@ -27,20 +27,21 @@ body {
   position: absolute;
   top: 3%;
   margin: 0px 0px 0px 0px;
+  left: -200px;
   padding: 0px;
   height: 100px;
   width: 225px;
-  max-width: 225px;
-  max-height: 100px;
+  max-width: 205px;
+  max-height: 80px;
 }
 
 #desc {
+  display: none;
   position: absolute;
   padding: 10px 10px 10px 10px;
-  left: 9.5%;
-  top: 58px;
+  left: 160px;
+  top: 40px;
   margin: 0px 0px 0px 0px;
-  float: right;
   font-family: 'Open Sans', sans-serif;
   color: solid red;
   font-size: 16px;
@@ -50,16 +51,18 @@ body {
 }
 
 #beta {
+  display: none;
   position: absolute;
   font-weight: bold;
   float: right;
-  top: 67px;
+  top: 51px;
   right: 175px;
   left: 1025px;
 }
 
 #tweety {
-  top: 40px;
+  display: none;
+  top: 30px;
   position: absolute;
   right: 120px;
   max-height: 50px;
@@ -122,6 +125,21 @@ body {
 #d4:hover, #d6:hover, #d8:hover, #d10:hover, #d12:hover, #d20:hover {
   cursor: pointer;
   opacity: 50%;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 .counters {
