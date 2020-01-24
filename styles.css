@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/*Extra small devices (portrait phones, less than 576px)*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    #dice-cards-container {
+        margin-top: 50px;
+        max-width: 50%;
+        max-height: 50% !important;
+    }  
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    #dice-cards-container {
+        margin-top: 50px;
+        max-width: 50%;
+        max-height: 50% !important;
+    }  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #dice-cards-container {
+        margin-top: 50px;
+        max-width: 50%;
+        max-height: 50% !important;
+    }
+}  
+   
+   
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    #dice-cards-container {
+        margin-top: 50px;
+        max-width: 50%;
+        max-height: 50% !important;
+    }      
+}
+
+@media (min-width: 1600px) {    
+    #dice-cards-container {
+        margin-top: 50px;
+        max-width: 40%;
+        max-height: 40% !important;
+    }  
+}
+
+
+
+/*Everything under is the document*/
+
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+       
+}
+
+#navigation {
+    border-bottom: 2px solid red;
+    height: 90px;
+    z-index: 1;
+}
+
+a.navbar-brand {
+    border-top: -5px;
+    border-bottom: -5px;
+    margin-left: 5px;
+    padding: 0px 0px 0px 0px;
+    height: auto;
+    width: auto;
+}
+
+/* Adjusting height of list items */
+
+.nav-item {
+    text-align: right;
+    font-size: 1.1rem;
+    color: rgba(255, 0, 0);
+    padding: 5px 5px 5px 5px;
+}
+
+#navbarUl {
+    margin-top: 10px;
+}
+
+#dice {
+    margin-top: 7px;
+    max-height: 47px;
+    max-width: 47px;
+}
+
+#dice:hover {
+    cursor: pointer;
+}
+
+#tweety {
+    
+    max-height: 50px;
+    max-width: 50px;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Cards are below */
+
+#dice-cards-container {
+  margin-top: 10px;
+}
+
+.cards{
+    border-radius: 25px;
+    margin-top: 25px;
+    min-width: 25%;
+    max-width: 25%;
+    
+}
+
+.textcard {
+    border-radius: 25px;
+    margin-top: 25px;
+    min-width: 25%;
+    max-width: 25%;
+    
+}
+
+
+#d4, #d6, #d8, #d10, #d12, #d20 {
+  height: auto;
+  width: auto;
+  min-width: 75%;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  
+}
+
+#d4:hover, #d6:hover, #d8:hover, #d10:hover, #d12:hover, #d20:hover{
+    cursor: pointer;
+}
+
+
+#dice:hover, #tweety:hover, #d4:hover, #d6:hover, #d8:hover, #d10:hover, #d12:hover, #d20:hover {
+  animation: shake 0.6s;
+  animation-iteration-count: infinite;
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+.custom-select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*Container for the set of selects*/
+.modifiers {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+/*Modifier card itself */
+.modifier-card{
+    border-radius: 10px;
+    margin-top: 50px;
+    min-width: 92%;
+    min-height: 15rem;
+}
+
+.roll-button{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 75%;
+    height: auto;
+}
+
+
+
+
+/*Text stylings, rules, etc.*/
+#desc {
+    text-align: left;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgba(255, 0, 0);
+    letter-spacing: .05em;
+}
+
+#pick {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: white;
+    letter-spacing: .05rem;
+}
+
+.addtext {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    letter-spacing: .05rem;
+}
+
+.card-text{
+    margin-left: 5px;
+    font-size: 1.2rem;
+    color: red;
+}
+
+
+
+#textContainer {
+    padding: 0;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 25px;
+}
+
+#textarea {
+    resize: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.btn-primary {
+    background-color: red !important;
+    border-color: red !important;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .025rem;
+}
+
+.btn-primary:hover {
+    opacity: 75%;
+}
