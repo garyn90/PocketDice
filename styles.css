@@ -190,11 +190,11 @@ a.navbar-brand {
 .modifier-card{
     border-radius: 10px;
     margin-top: 50px;
-    min-width: 92%;
+    min-width: 95%;
     min-height: 15rem;
 }
 
-.roll-button{
+.roll-button, .reset-button {
     margin-top: 25px;
     margin-bottom: 25px;
     width: 75%;
@@ -215,6 +215,7 @@ a.navbar-brand {
     font-size: 1rem;
     color: rgba(255, 0, 0);
     letter-spacing: .05em;
+    
 }
 
 #pick {
@@ -226,6 +227,7 @@ a.navbar-brand {
     text-align: center;
     color: white;
     letter-spacing: .05rem;
+    text-transform: uppercase;
 }
 
 .addtext {
@@ -236,6 +238,7 @@ a.navbar-brand {
     text-align: center;
     color: white;
     letter-spacing: .05rem;
+    text-transform: uppercase;
 }
 
 .card-text{
