@@ -148,7 +148,10 @@
           <option value="10">10</option>
         </select>
       <div class="text-center">
-        <button type="button" class="mx-auto btn btn-primary btn-lg  red roll-button">Roll the dice</button>
+        <button id="roll-button" type="button" class="mx-auto btn btn-primary btn-sm roll-button">Roll the dice</button>
+      </div>  
+      <div class="text-center">
+        <button id="reset-button" type="button" class="mx-auto btn btn-primary btn-sm reset-button">Reset</button>
       </div>  
     </div>
   </div>
@@ -157,7 +160,7 @@
 <!-- The Text Area-->
   
   <div id="textContainer" class="container">
-    <textarea id="textarea" readonly class="text-card form-control mx-auto col-12" rows="9"></textarea>
+    <textarea id="textarea" readonly class="text-card form-control mx-auto col-12" rows="10"></textarea>
     </div>
   </div> 
   </div>
