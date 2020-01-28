@@ -7,14 +7,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="C:\Users\garyn\Desktop\bootstraptrial\styles.css">
+    <link rel="stylesheet" href="D:\code\pocketdungeon\styles.css">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="C:\Users\garyn\Desktop\bootstraptrial\bootstraptrial.js"></script>
+    <script src="D:\code\pocketdungeon\pocketdungeon.js"></script>
     
     <title>Pocket Dungeon || Dice Roller || Character Sheet coming soon</title>
   </head>
@@ -29,7 +29,7 @@
       <div id="navbarUl" class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
         
-        <li class="nav-item active"><img id="dice" src="D:\code\pocketdungeon\images\20dice.png"></li>
+        <li class="nav-item active"><a href="#"><img id="dice" src="D:\code\pocketdungeon\images\20dice.png"></a></li>
         <li class="nav-item active"><a target="_blank" href="https://twitter.com/__gooon__" class="nav-link"><img id="tweety" src="D:\code\pocketdungeon\images\twit_red.png"></a></li>
       
         
@@ -37,7 +37,7 @@
       </div>
     </nav>   
   <div class="container">
-    <h5 id="pick"><u>1)Pick as many as you need.</u></h5>
+    <h2 id="pick"><u>Step #1: Pick as many as you need.</u></h3>
   </div>
 
   <!-- These are the dice cards -->
@@ -91,13 +91,14 @@
 
   <!--Modifier Row Below-->
 
-    <h5><u>2)Add your modifiers and roll.</u></h5>
+    <h2 class="addtext"><u>Step #2: Add your modifiers & roll</u></h2>
   </div>
   <div class="row">
     <div class="modifier-card card mx-auto col-6 h:200">
       <div class="container modifiers">
-        <select class="custom-select">
-          <option selected>Proficiency</option>
+        <p id="prof-text">Proficiency</p>
+        <select id="prof-select" class="custom-select">
+          <option selected value="0">0</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -109,14 +110,14 @@
           <option value="9">9</option>
           <option value="10">10</option>
         </select>
-        <select class="custom-select">
-          <option selected>Ability Score</option>
+        <p id="abili-text">Ability Score</p>
+        <select id="abili-select" class="custom-select">
           <option value="-5">-5</option>
           <option value="-4">-4</option>
           <option value="-3">-3</option>
           <option value="-2">-2</option>
           <option value="-1">-1</option>
-          <option value="0">0</option>
+          <option selected value="0">0</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -128,14 +129,14 @@
           <option value="9">9</option>
           <option value="10">10</option>
         </select>
-        <select class="custom-select">
-          <option selected>Other</option>
+        <p id="other-text">Other</p>
+        <select id="other-select" class="custom-select">
           <option value="-5">-5</option>
           <option value="-4">-4</option>
           <option value="-3">-3</option>
           <option value="-2">-2</option>
           <option value="-1">-1</option>
-          <option value="0">0</option>
+          <option selected value="0">0</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
