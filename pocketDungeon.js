@@ -7,7 +7,7 @@ function dice(num) {
     return(math);
 }
 
-//dice counters and click events//
+//individual dice arrays and counters below//
 
 var d4Array = [];
 var d6Array = [];
@@ -65,19 +65,16 @@ $('#d20').on('click', function() {
     $('#d20textCounter').text(counter);
 });
 
-//Button roll//
+//the button roll//
+
 $("#roll-button").on("click", function() {
-  //user selected options variables below 
-  var userProf = parseInt($('#prof-select').val());
-  var userAbili = parseInt($('#abili-select').val());
-  var userOther = parseInt($('#other-select').val());
-  console.log(userProf);
-  console.log(userAbili)
-  console.log(userOther);
-  
-  
+   
+//diceString is the text string that gets displayed in the textarea for the user
+
   let diceString = '';
-  //each value in each array is sorted into new array, along with parsed user proficiency, ability score, and other 
+
+//each value in each dice array is sorted into new array, 'allTheDice' 
+
   d4Array.forEach(function(item) {
     allTheDice.push(item);
   });
@@ -96,11 +93,28 @@ $("#roll-button").on("click", function() {
   d20Array.forEach(function(item) {
     allTheDice.push(item);
   });
-  allTheDice.push(userProf, userAbili, userOther);
-  console.log(allTheDice);  
 
+//this function filters out any modifier with the value of '0', then parseInts any other value and adds to the roll 
+  modifierFilter();
+  function modifierFilter() {
+    let userProf = $('#prof-select').val();
+    let userAbili = $('#abili-select').val();
+    let userOther = $('#other-select').val();
+    if(userProf !== "0") {
+      allTheDice.push(parseInt(userProf));
+      console.log(userProf);
+    }
+    if(userAbili !== "0") {
+      allTheDice.push(parseInt(userAbili));
+      console.log(userAbili);
+    }
+    if(userOther !== "0") {
+      allTheDice.push(parseInt(userOther));
+      console.log(userOther);
+    }
+  }
 
-//event that turns all dice rolls & modifiers into presentable text for user
+//turns all dice rolls & modifiers into presentable text for user
   for (let i = 0; i < allTheDice.length; i++) {
     if(i === allTheDice.length - 1 ) {
       diceString += allTheDice[i] + ' =';
@@ -108,12 +122,9 @@ $("#roll-button").on("click", function() {
     else {
       diceString += allTheDice[i] + ' + ';
     }
-      
   }
-  
 
-
-//allTheDice array total, reduce function  
+//allTheDice array total .reduce function - essentially iterates through the aTD array, and stores the total in diceTotal, which gets concat'd into diceString 
   const diceTotal = allTheDice.reduce((accumulator, currentNum) => {
     return accumulator + currentNum;
   }, 0);
@@ -121,8 +132,7 @@ $("#roll-button").on("click", function() {
   console.log(diceString);
   $('#textarea').val(diceString); 
   
-
-//after click event, all values get reset
+//after the user clicks on the roll button all arrays, values and strings get reset
   diceString = '';  
   d4Array = [];
   d6Array = [];
@@ -146,8 +156,7 @@ $("#roll-button").on("click", function() {
   $('#prof-select, #abili-select, #other-select').val('0');
 });
 
-
-//Reset button//
+//reset button, for the user to reset their inputs themselves, before the roll//
 $("#reset-button").on("click", function() {
   diceString = '';
   d4Array = [];
@@ -173,11 +182,8 @@ $("#reset-button").on("click", function() {
   $('#prof-select, #abili-select, #other-select').val('0');
 });
 
+}); 
 
+//end of the line, cowboy
 
-
-});
-
-
-//extraneous stuff
 
