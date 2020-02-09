@@ -18,153 +18,152 @@
     
     <title>Pocket Dungeon || Dice Roller || Character Sheet coming soon</title>
   </head>
-  <body>
+   <body>
     <nav id="navigation" class="navbar navbar-expand-sm navbar-light bg-light">
-      <a href="#" class="navbar-brand"><img id="logo" class="img-fluid" src="logo7svg.svg"></a>
+      <a href="#" class="navbar-brand"><img id="logo" class="img-fluid" src="D:\code\pocketdungeon\images\logo7svg.svg"></a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarUl">
         <span class="navbar-toggler-icon"></span>
       </button>
       <h6 id="desc" class="text-left d-sm-none d-none d-sm-block">...a dice roller when you're in a pinch.</h6>
-      <!--<h6 id="coming" class="d-sm-none d-none d-sm-block">Sheet coming soon</h6>-->
       <div id="navbarUl" class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
-        
-        <li class="nav-item active"><a href="#"><img id="dice" src="20dice.png"></a></li>
-        <li class="nav-item active"><a target="_blank" href="https://twitter.com/__gooon__" class="nav-link"><img id="tweety" src="twit_red.png"></a></li>
-      
-        
+        <li class="nav-item active"><a href="#"><img id="dice" src="D:\code\pocketdungeon\images\20dice.png"></a></li>
+        <li class="nav-item active"><a target="_blank" href="https://twitter.com/__gooon__" class="nav-link"><img id="tweety" src="D:\code\pocketdungeon\images\twit_red.png"></a></li>
       </ul>
       </div>
     </nav>   
-  <div class="container">
-    <h2 id="pick"><u>Step #1: Pick as many as you need.</u></h3>
-  </div>
+    <div class="container">
+      <h2 id="pick">Step #1: Pick as many as you need.</h2>
+    </div>
 
   <!-- These are the dice cards -->
 
-  <div id="dice-cards-container" class="container">
-    <div class="row">
-      <div id="cards" class="cards card mx-auto col-4 h:200">
-        <img id="d4" class= "card-img-top img-fluid mx-auto" src="d4svg.svg">
-        <div class="card-body">
-        <p id="d4textCounter" class="card-text">0</p>
+    <div id="dice-cards-container" class="container">
+      <div class="row">
+        <div id="cards" class="cards card mx-auto col-4 h:200">
+          <img id="d4" class= "card-img-top img-fluid mx-auto" src="D:\code\pocketdungeon\images\d4svg.svg">
+          <div class="card-body">
+          <p id="d4textCounter" class="card-text">0</p>
+          </div>
         </div>
-      </div>
       <div id="cards" class="cards card mx-auto col-4 h:200">
-        <img id="d6" class= "card-img-top img-fluid mx-auto" src="d6svg.svg">
+        <img id="d6" class= "card-img-top img-fluid mx-auto" src="D:\code\pocketdungeon\images\d6svg.svg">
         <div class="card-body">
           <p id="d6textCounter" class="card-text">0</p>          
         </div>
       </div>
       <div id="cards" class="cards card mx-auto col-4 h:200">
-        <img id="d8" class= "card-img-top img-fluid mx-auto" src="d8svg.svg">
+        <img id="d8" class= "card-img-top img-fluid mx-auto" src="D:\code\pocketdungeon\images\d8svg.svg">
         <div class="card-body">
           <p id="d8textCounter" class="card-text">0</p>          
         </div>
       </div>
-    </div>
+      </div>
   
 
 <!-- second row of dice-->
-  <div class="row">
-    <div class="cards card mx-auto col-4 h:200">
-      <img id="d10" class= "card-img-top img-fluid mx-auto" src="d10svg.svg">
-      <div class="card-body">
-      <p id="d10textCounter" class="card-text">0</p>
+    <div class="row">
+      <div class="cards card mx-auto col-4 h:200">
+        <img id="d10" class= "card-img-top img-fluid mx-auto" src="D:\code\pocketdungeon\images\d10svg.svg">
+        <div class="card-body">
+          <p id="d10textCounter" class="card-text">0</p>
+        </div>
       </div>
-    </div>
-    <div class="cards card mx-auto col-4 h:200">
-      <img id="d12" class= "card-img-top img-fluid mx-auto" src="d12svg.svg">
-      <div class="card-body">
-        <p id="d12textCounter" class="card-text mx-auto">0</p>          
+      <div class="cards card mx-auto col-4 h:200">
+        <img id="d12" class= "card-img-top img-fluid mx-auto" src="D:\code\pocketdungeon\images\d12svg.svg">
+        <div class="card-body">
+          <p id="d12textCounter" class="card-text mx-auto">0</p>          
+        </div>
       </div>
-    </div>
-    <div class="cards card mx-auto col-4 h:200">
-      <img id="d20" class="card-img-top img-fluid mx-auto" src="d20svg.svg">
-      <div class="card-body">
-        <p id="d20textCounter" class="card-text">0</p>          
+      <div class="cards card mx-auto col-4 h:200">
+        <img id="d20" class="card-img-top img-fluid mx-auto" src="D:\code\pocketdungeon\images\d20svg.svg">
+        <div class="card-body">
+          <p id="d20textCounter" class="card-text">0</p>          
+        </div>
       </div>
     </div>
   </div>
-  <div class="container addtext">
-  
 
-  <!--Modifier Row Below-->
-
-    <h2 class="addtext"><u>Step #2: Add your modifiers & roll</u></h2>
-  </div>
-  <div class="row">
-    <div class="modifier-card card mx-auto col-6 h:200">
-      <div class="container modifiers">
-        <p id="prof-text">Proficiency</p>
-        <select id="prof-select" class="custom-select">
-          <option selected value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-        <p id="abili-text">Ability Score</p>
-        <select id="abili-select" class="custom-select">
-          <option value="-5">-5</option>
-          <option value="-4">-4</option>
-          <option value="-3">-3</option>
-          <option value="-2">-2</option>
-          <option value="-1">-1</option>
-          <option selected value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-        <p id="other-text">Other</p>
-        <select id="other-select" class="custom-select">
-          <option value="-5">-5</option>
-          <option value="-4">-4</option>
-          <option value="-3">-3</option>
-          <option value="-2">-2</option>
-          <option value="-1">-1</option>
-          <option selected value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-      <div class="text-center">
-        <button id="roll-button" type="button" class="mx-auto btn btn-primary btn-sm roll-button">Roll</button>
-      </div>  
-      <div class="text-center">
-        <button id="reset-button" type="button" class="mx-auto btn btn-primary btn-sm reset-button">Reset</button>
-      </div>  
+<!--Modifier Row Below-->
+    <div class="container">
+      <h2 id="addText">Step #2: Add your modifiers & roll</h2>
     </div>
+    <div id="dice-cards-container" class="container">
+    <div class="row">
+      <div class="modifier-card card mx-auto col-6 h:200">
+        <div class="container modifiers">
+          <p id="prof-text">Proficiency</p>
+          <select id="prof-select" class="custom-select">
+            <option selected value="0">0</option>
+            <option value="+1">+1</option>
+            <option value="+2">+2</option>
+            <option value="+3">+3</option>
+            <option value="+4">+4</option>
+            <option value="+5">+5</option>
+            <option value="+6">+6</option>
+            <option value="+7">+7</option>
+            <option value="+8">+8</option>
+            <option value="+9">+9</option>
+            <option value="+10">+10</option>
+          </select>
+          <p id="abili-text">Ability Score</p>
+          <select id="abili-select" class="custom-select">
+            <option value="-5">-5</option>
+            <option value="-4">-4</option>
+            <option value="-3">-3</option>
+            <option value="-2">-2</option>
+            <option value="-1">-1</option>
+            <option selected value="0">0</option>
+            <option value="1">+1</option>
+            <option value="2">+2</option>
+            <option value="3">+3</option>
+            <option value="4">+4</option>
+            <option value="5">+5</option>
+            <option value="6">+6</option>
+            <option value="7">+7</option>
+            <option value="8">+8</option>
+            <option value="9">+9</option>
+            <option value="10">+10</option>
+          </select>
+          <p id="other-text">Other</p>
+          <select id="other-select" class="custom-select">
+            <option value="-5">-5</option>
+            <option value="-4">-4</option>
+            <option value="-3">-3</option>
+            <option value="-2">-2</option>
+            <option value="-1">-1</option>
+            <option selected value="0">0</option>
+            <option value="1">+1</option>
+            <option value="2">+2</option>
+            <option value="3">+3</option>
+            <option value="4">+4</option>
+            <option value="5">+5</option>
+            <option value="6">+6</option>
+            <option value="7">+7</option>
+            <option value="8">+8</option>
+            <option value="9">+9</option>
+            <option value="10">+10</option>
+          </select>
+        <div class="text-center">
+          <button id="roll-button" type="button" class="mx-auto btn btn-primary btn-lg roll-button">Roll</button>
+        </div>  
+        <div class="text-center">
+          <button id="reset-button" type="button" class="mx-auto btn btn-primary btn-lg reset-button">Reset</button>
+        </div>  
+      </div>
+  </div>
   </div>
 </div>
 
 <!-- The Text Area-->
-  
+  <div class="container">
+    <h2 id="addText">Step #3: Results</h2>
+  </div>
   <div id="textContainer" class="container">
     <textarea id="textarea" readonly class="text-card form-control mx-auto col-12" rows="10"></textarea>
-    </div>
-  </div> 
+    
   </div>
-</div>
+  
+  
 </body>
 </html>
