@@ -46,6 +46,10 @@
         max-width: 35%;
         max-height: 35% !important;
     }  
+    #textarea {
+        resize: none;
+        width: 65% !important;
+    }
 }
 
 
@@ -194,7 +198,7 @@ a.navbar-brand {
 .modifier-card {
     border-radius: 5px;
     
-    min-width: 100%;
+    min-width: 99%;
     min-height: 15rem;
 }
 
@@ -266,8 +270,7 @@ a.navbar-brand {
 
 #textarea {
     resize: none;
-    width: 75%;
-    height: 100%;
+    width: 99%;
 }
 
 .btn-primary {
